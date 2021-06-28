@@ -46,7 +46,7 @@ body{
     width:35rem;
     height: 8vh;
     border-radius: 15px;
-    margin-top: 1.5rem;
+    margin-top: 1.25rem;
 }
 #pokemon_imagen_titulo h2{
     display: inline-block;
@@ -59,7 +59,7 @@ body{
 flex-basis:30vw;
 height: 56vh;
 padding-top: 10px;
-transform: translateX(25%);
+padding-left: 6rem;
 }
 .pokemon_info .pokemon_tarjeta{
     height: 50vh;
@@ -217,7 +217,7 @@ footer h2{
     }
     .pokemon_img img{
         height:15rem;
-        transform: translateX(20%);
+        padding-left: 3rem;
     }
    .pokemon_card .pokemon_tarjeta{
        height: 30vh;
@@ -276,7 +276,7 @@ padding-top: 5px;
   .pokemon_img img{
   height:25vh;
   margin-top: 40px;
-  margin-left: 3.25rem;
+  margin-left: 2rem;
 }
 
 
