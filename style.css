@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab&display=swap');
 
+:root{
+    --color-header:#F5E6CA;
+    --color-oro: #e0c671dc;
+    --color-cuerpo-body:#FFD8CC;
+}
 *{
     padding: 0;
     margin: 0;
 }
 header {
     display:flex;
-    background-color:#F5E6CA;
+    background-color:var(--color-header);
 }
 header img {
     margin-top: 0.25%;
@@ -15,11 +20,11 @@ header img {
 
 header h1 {
  margin-top: 0.27em;
- color: #e0c671dc;
+ color: var(--color-oro);
  text-shadow: 3px 2px 2px white;
 }
 body{
-    background: #FFD8CC;
+    background: var(--color-cuerpo-body);
     height:100%;
 }
 .pokemon_card{
@@ -58,7 +63,7 @@ transform: translateX(25%);
 }
 .pokemon_info .pokemon_tarjeta{
     height: 50vh;
-    flex-basis: 30vw;
+    min-width: 27vw;
 }
 .pokemon_card  .pokemon_info{
     flex-basis:60%;
