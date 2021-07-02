@@ -80,7 +80,7 @@ padding-left: 6rem;
 }
 
 .pokemon_info div  {
-    margin-top: 1.1rem;
+    margin-top: 1rem;
     padding-bottom: 5rem;
     font-family: bold;
     justify-content:center;
@@ -209,29 +209,33 @@ footer h2{
         display:flex;
         flex-direction: column;
         height: 64vh;
-    
+        
         
     }
     .pokemon_card .pokemon-pokemon_seleccionado{
         min-height: 10px;
     }
     .pokemon_img img{
-        height:15rem;
-        padding-left: 3rem;
+        height:12rem;
+        z-index: 2;
+    position:absolute;
+    padding-left: 4rem;
+    margin-top: -10px;
     }
    .pokemon_card .pokemon_tarjeta{
        height: 30vh;
    }
     .pokemon_card .pokemon_info{
-        min-height: 13rem;
+        min-height: 10rem;
         min-width: 15rem;
         transform: translateX(7.5%);
-        padding-top: 1px;
-        margin-top: 5px;
+        padding-top: 0px;
+        margin-top: 11rem;
     }
     .pokemon_card .pokemon_info div{
         padding:0;
         margin-top: 0.45rem;
+        font-size: 12px;
     }
    
     .other_pokemon .text_others h2{
@@ -260,9 +264,13 @@ footer h2{
     .pokemon_card{
         position: relative;
     }
+    .pokemon_card .pokemon_info {
+    min-height: 8rem;
+    margin-top: -10px;
+    }
     .pokemon_card .pokemon_seleccionado #pokemon_imagen_titulo{
     width:19rem;
-    margin-top: 8px;
+    margin-top: -10rem;
     }
     .pokemon_card .pokemon_seleccionado #pokemon_imagen_titulo h2{
 padding-top: 5px;
@@ -274,9 +282,8 @@ padding-top: 5px;
     top: -10px;
   }
   .pokemon_img img{
-  height:25vh;
-  margin-top: 40px;
-  margin-left: 2rem;
+  height:30vh;
+  margin-left: 1rem;
 }
 
 
@@ -307,14 +314,13 @@ padding-top: 5px;
                 justify-content:center;
                    }
         .other_pokemon .card_one img, .other_pokemon .card_two img {
-            width:50px;
+            width:35px;
             padding:0px;
             margin-left: 20px;
         }
         .other_pokemon .card_three img, .other_pokemon .card_four img{
-            width:50px;
+            width:35px;
             padding:0px;
             margin-left: 20px;
         }
 }
-
