@@ -1,143 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab&display=swap');
 
-:root{
-    --color-header:#F5E6CA;
-    --color-oro: #e0c671dc;
-    --color-cuerpo-body:#FFD8CC;
-}
-*{
-    padding: 0;
-    margin: 0;
-}
-header {
-    display:flex;
-    background-color:var(--color-header);
-}
-header img {
-    margin-top: 0.25%;
-    margin-left: 1%;
-}
-
-header h1 {
- margin-top: 0.27em;
- color: var(--color-oro);
- text-shadow: 3px 2px 2px white;
-}
-body{
-    background: var(--color-cuerpo-body);
-    height:100%;
-}
-.pokemon_card{
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-.pokemon_card .pokemon_seleccionado{
- flex-basis: 50%;
- padding: 1.5px 5px 0 50px;
-   
-}
-.pokemon_card .pokemon_seleccionado #pokemon_imagen_titulo{
-    text-align: center;
-    background-color: whitesmoke;
-    text-justify: center;
-    width:35rem;
-    height: 8vh;
-    border-radius: 15px;
-    margin-top: 1.25rem;
-}
-#pokemon_imagen_titulo h2{
-    display: inline-block;
-    padding-top: 0.15rem;
-    font-size:3rem;
-    
-    font-family: 'Bebas Neue', cursive;
-}
-.pokemon_img img{
-flex-basis:30vw;
-height: 56vh;
-padding-top: 10px;
-padding-left: 6rem;
-}
-.pokemon_info .pokemon_tarjeta{
-    height: 50vh;
-    min-width: 27vw;
-}
-.pokemon_card  .pokemon_info{
-    flex-basis:60%;
-    min-height: 65vh;
-    border-radius:10px;
-    margin: 3% 5% 2% 3%;
-    background-color:whitesmoke;
-}
-.pokemon_info .habilidades{
-    display:flex;
-    flex-direction:row;
-    justify-content: space-around;
-    height: 10vh;
-}
-
-.pokemon_info div  {
-    margin-top: 0.8rem;
-    padding-bottom: 5rem;
-    font-family: bold;
-    justify-content:center;
-    text-align: center;
-    font-size: 1.2rem;
-    font-family: 'Roboto Slab', serif;
-}
-
-footer{
-    width: 100vw;
-    height: 15vh;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: whitesmoke;
-}
-footer .other_pokemon{
-    display:flex;
-}
-footer .other_pokemon .first_column_other{
-    display:flex;
-    flex-direction: row; 
-    flex-basis: 20vw;
-    padding-left: 10rem;
-}
-footer .other_pokemon .two_column{
-    display:flex;
-    flex-direction: row; 
-}
-
-.other_pokemon .text_others h2{
-padding-top: 1.5rem;
-padding-left: 15rem;
-}
-.other_pokemon .card_one, .other_pokemon .card_two,   .other_pokemon .card_three,.other_pokemon .card_four  {
-  background-color: rgba(241, 234, 234, 0.507);
-  border-radius: 5px;
-  flex-basis: 6rem;
-}
-
-.other_pokemon .card_one img, .other_pokemon .card_two img{
-    width:5vw;
-    padding:0.9rem 2rem 0rem;
-}
-.other_pokemon .card_three img,.other_pokemon .card_four img{
-    width:5vw;
-    padding: 1.25rem 2rem 0rem;
-}
-.card_one:hover,.card_two:hover , .card_three:hover,.card_four:hover{
-    background-color:white;
-    cursor: pointer;
-}
-
-footer h2{
-    margin: 3% 5% 2% 15%;
-    font-family: 'Roboto Slab', serif;
-}
 @media (min-width: 1914px){
   
     #pokemon_imagen_titulo img{
@@ -145,10 +7,11 @@ footer h2{
     }
     #pokemon_imagen_titulo h2{
         font-size: 3.5rem;
+        padding-top: 0.5rem;
     }
     .pokemon_info div  {
-        margin-top:2rem;
-        padding-bottom:8rem;
+        margin-top:2.5rem;
+        padding-bottom:5rem;
         font-size:1.5rem;
     }
     .pokemon_card  .pokemon_info{
@@ -158,33 +21,28 @@ footer h2{
         padding: 1px 5px 0 5px;
         }
         
-
+        footer .other_pokemon{
+            margin-top: 1.5rem;
+        }
     footer h2{
         font-size: 2.5rem;
     }
     
 }
 
-@media (max-width: 1000px){ 
-   
-    .pokemon_card .pokemon_seleccionado{
+@media (max-width: 1000px){   
+    .pokemon_seleccionado{
         padding: 0rem 0rem 0 0.5rem;
-       }
-      
+
+       }   
     #pokemon_imagen_titulo h2{
-        padding-top: 0.6rem;
-        font-size:30px;
-    }
-    
-    .pokemon_info div  {
-        margin-top: 1rem;
-    }
-    
-        
+        padding-top: 0.2rem;
+        font-size:45px;
+    }        
         footer{
             height:10vw;
         }
-       
+        
        
         .other_pokemon .text_others h2{
             padding: 1.5rem 0 0 5rem;
@@ -199,11 +57,13 @@ footer h2{
           }
 }
 @media (max-width: 820px){
-    
+    #pokemon_imagen_titulo h2{
+        padding-top: 0;
+        margin-top: -5px;
+    }
     .pokemon_card .pokemon_seleccionado #pokemon_imagen_titulo{
         width:20rem;
         height: 7vh;
-        
     }
     .pokemon_card{
         display:flex;
@@ -219,8 +79,8 @@ footer h2{
         height:12rem;
         z-index: 2;
     position:absolute;
-    padding-left: 4rem;
-    margin-top: -10px;
+    padding-left: 3rem;
+    margin-top: 0px;
     }
    .pokemon_card .pokemon_tarjeta{
        height: 30vh;
@@ -268,9 +128,11 @@ footer h2{
     min-height: 8rem;
     margin-top: -10px;
     }
+    
     .pokemon_card .pokemon_seleccionado #pokemon_imagen_titulo{
     width:19rem;
-    margin-top: -10rem;
+    margin-top: 1rem;
+    margin-left: -50px;
     }
     .pokemon_card .pokemon_seleccionado #pokemon_imagen_titulo h2{
 padding-top: 5px;
@@ -283,10 +145,13 @@ padding-top: 5px;
   }
   .pokemon_img img{
   height:30vh;
-  margin-left: 1rem;
+  margin-left: -2rem;
+  margin-top: 2.5rem;
 }
 
-
+.pokemon_card .pokemon_info div {
+margin-top: 20px;
+}
     footer{
         height:28vh;
     }
